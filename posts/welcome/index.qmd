@@ -1,0 +1,10 @@
+---
+title: "Welcome To My Blog"
+author: "Hadrien Barc"
+date: "2023-02-24"
+categories: [news]
+---
+
+Welcome ! This is my first blog !
+
+![](thumbnail.jpg)
