@@ -2,9 +2,9 @@
 title: "Welcome To My Blog"
 author: "Hadrien Barc"
 date: "2023-02-24"
-categories: [news]
+categories: [welcome]
 ---
 
-Welcome ! This is my first blog !
+Bienvenu dans mon premier blog !!
 
 ![](thumbnail.jpg)

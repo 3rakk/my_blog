@@ -1,14 +1,17 @@
----
-title: "Blog aire triangle"
-author: "Hadrien Barc"
-date: "2023-02-24"
-categories: [triangle]
-image: "triangles.jpeg"
----
+# 3).
 
-# Graphique des triangles côte à côte
+#' Renvoie trois triangles issus de la première itération de Sierpiński
+#' 
+#' divide_triangle
+#' 
+#' @param A Longueur 1
+#' @param B Longueur 2
+#' @param C Longueur 3
+#'
+#' @return
+#' @export
 
-```{r, echo=FALSE}
+
 # Fonction pour calculer le milieu entre deux points
 midpoint <- function(p1, p2) {
   return((p1 + p2) / 2)
@@ -35,7 +38,89 @@ A <- c(0, 0)
 B <- c(2, 0)
 C <- c(1, 2)
 triangles <- divide_triangle(A, B, C)
+print(triangles)
 
+
+
+
+# 4).
+#' Diviser une liste de triangles en trois triangles Sierpiński
+#' 
+#' divide_list_triangle
+#' 
+#' @param triangle_list une liste de triangles, où chaque triangle est une liste de trois points
+#'
+#' @return une nouvelle liste de triangles, résultant de la division de chacun des triangles de la liste initiale en trois triangles Sierpiński
+#' @export
+#' @example 
+A <- c(0, 0)
+B <- c(2, 0)
+C <- c(1, 2)
+triangles <- list(list(A, B, C))
+new_triangles <- divide_list_triangle(triangles)
+print(new_triangles)
+
+divide_list_triangle <- function(triangle_list) {
+  # Initialiser la liste de triangles résultants
+  new_triangle_list <- list()
+  
+  # Pour chaque triangle de la liste initiale
+  for (triangle in triangle_list) {
+    # Appliquer la fonction divide_triangle
+    divided_triangles <- divide_triangle(triangle[[1]], triangle[[2]], triangle[[3]])
+    
+    # Ajouter les triangles résultants à la liste
+    new_triangle_list <- c(new_triangle_list, divided_triangles)
+  }
+  
+  # Retourner la liste de triangles résultants
+  return(new_triangle_list)
+}
+
+
+
+
+
+
+
+# 5).
+remotes::install_github("3rakk/heron")
+renv::snapshot()
+
+# 6).
+library(targets)
+tar_script("posts/post-with-code/_targets.R")
+
+# 7).
+tar_config_set(store = "posts/post-with-code/_targets",
+               script = "posts/post-with-code/_targets.R")
+
+# 8).
+list(
+  
+  # Target pour calculer les coordonnées des triangles après 4 itérations
+  tar_target(
+    triangles,
+    {
+      # Coordonnées des trois points initiaux
+      A <- c(0, 0)
+      B <- c(0, 1)
+      C <- c(0.5, sqrt(3)/2)
+      
+      # Création de la liste initiale de triangles
+      triangles <- list(list(A, B, C))
+      
+      # Itération de la fonction divide_list_triangle pour obtenir les triangles après 4 itérations
+      for (i in 1:4) {
+        triangles <- divide_list_triangle(triangles)
+      }
+      
+      # Retourner la liste de triangles
+      return(triangles)
+    }
+  )
+  
+)
 
 # 9).
 library(ggplot2)
@@ -112,11 +197,9 @@ plot_triangles <- function(triangle) {
 triangle <- list(c(0, 0), c(2, 0), c(1, 2))
 plot_triangles(triangle)
 
-```
+# 10). Fait !
 
-# Aire triangle initial
-
-```{r, echo=FALSE}
+# 11).
 # Creation d'une fonction pour transformer les coordonnés en longueur
 distance_points <- function(point1, point2) {
   sqrt((point2[1] - point1[1])^2 + (point2[2] - point1[2])^2)
@@ -133,11 +216,6 @@ c <- distance_points(C, A)
 library(heron)
 aire_initial <- heron(a, b, c)
 aire_initial
-```
-
-# Somme des aires des trois triangles (Sierpiński)
-
-```{r, echo=FALSE}
 # Calcul de la somme des aires des trois triangles Sierpiński
 A <- triangles[[1]][1]
 A <- unlist(A)
@@ -175,4 +253,23 @@ aire2 <- heron(d,e,f)
 aire3 <- heron(g,h,i)
 aire_tot <- aire1 + aire2 + aire3
 aire_tot
-```
+
+# 12).
+library(targets)
+tar_read(posts/post-with-code/index.qmd)
+
+# 13). 
+library(tarchetypes)
+library(quarto)
+tar_target(
+  "blog",
+  tar_quarto(
+    "output/blog.html",
+    "posts/post-with-code/index.qmd",
+    deps = tar_target("targets")
+  )
+)
+
+# 15). 
+tar_make()
+

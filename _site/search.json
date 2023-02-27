@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nFeb 24, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nFeb 24, 2023\n\n\nHadrien Barc\n\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -14,17 +7,45 @@
     "text": "About this blog"
   },
   {
+    "objectID": "index.html#ce-package-permet-de-calculer-laire-dun-triangle-en-utilisant-la-formule-de-héron.",
+    "href": "index.html#ce-package-permet-de-calculer-laire-dun-triangle-en-utilisant-la-formule-de-héron.",
+    "title": "Blog",
+    "section": "Ce package permet de calculer l’aire d’un triangle en utilisant la formule de Héron.",
+    "text": "Ce package permet de calculer l’aire d’un triangle en utilisant la formule de Héron."
+  },
+  {
+    "objectID": "index.html#pour-installer-ce-package-il-faut-exécutez-la-commande",
+    "href": "index.html#pour-installer-ce-package-il-faut-exécutez-la-commande",
+    "title": "Blog",
+    "section": "Pour installer ce package il faut exécutez la commande :",
+    "text": "Pour installer ce package il faut exécutez la commande :"
+  },
+  {
+    "objectID": "index.html#remotesinstall_github3rakkheron",
+    "href": "index.html#remotesinstall_github3rakkheron",
+    "title": "Blog",
+    "section": "remotes::install_github(“3rakk/heron”)",
+    "text": "remotes::install_github(“3rakk/heron”)"
+  },
+  {
     "objectID": "posts/post-with-code/index.html",
     "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
+    "title": "Blog aire triangle",
     "section": "",
-    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+    "text": "Graphique des triangles côte à côte\n\n\n\n\n\n\n\nAire triangle initial\n\n\n[1] 2\n\n\n\n\nSomme des aires des trois triangles (Sierpiński)\n\n\n[1] 1.5"
   },
   {
     "objectID": "posts/welcome/index.html",
     "href": "posts/welcome/index.html",
     "title": "Welcome To My Blog",
     "section": "",
-    "text": "Welcome ! This is my first blog !"
+    "text": "Bienvenu dans mon premier blog !!"
+  },
+  {
+    "objectID": "posts/1-welcome/index.html",
+    "href": "posts/1-welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "Bienvenu dans mon premier blog !!"
   }
 ]
