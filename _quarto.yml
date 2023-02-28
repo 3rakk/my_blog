@@ -17,3 +17,4 @@ format:
 
 editor: visual
 
+output_dir: _site
