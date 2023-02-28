@@ -32,7 +32,7 @@
     "href": "posts/post-with-code/index.html",
     "title": "Blog aire triangle",
     "section": "",
-    "text": "Graphique des triangles côte à côte\n\n\n\n\n\n\n\nAire triangle initial\n\n\n[1] 2\n\n\n\n\nSomme des aires des trois triangles (Sierpiński)\n\n\n[1] 1.5"
+    "text": "remotes::install_github(\"3rakk/heron\")"
   },
   {
     "objectID": "posts/welcome/index.html",
@@ -47,5 +47,12 @@
     "title": "Welcome To My Blog",
     "section": "",
     "text": "Bienvenu dans mon premier blog !!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Welcome To My Blog\n\n\n\n\n\n\n\nwelcome\n\n\n\n\n\n\n\n\n\n\n\nFeb 24, 2023\n\n\nHadrien Barc\n\n\n\n\n\n\n  \n\n\n\n\nBlog aire triangle\n\n\n\n\n\n\n\ntriangle\n\n\n\n\n\n\n\n\n\n\n\nFeb 24, 2023\n\n\nHadrien Barc\n\n\n\n\n\n\nNo matching items"
   }
 ]

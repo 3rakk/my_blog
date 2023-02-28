@@ -1,7 +1,7 @@
 {
-  "hash": "30e71770ef5eedbc72a765fa2b81789d",
+  "hash": "8318d7000f099fdb4c76b5daa8f98d69",
   "result": {
-    "markdown": "---\ntitle: \"Blog aire triangle\"\nauthor: \"Hadrien Barc\"\ndate: \"2023-02-24\"\ncategories: [triangle]\nimage: \"triangles.jpeg\"\n---\n\n\n# Graphique des triangles côte à côte\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n\n# Aire triangle initial\n\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n\n\n# Somme des aires des trois triangles (Sierpiński)\n\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n```\n[1] 1.5\n```\n:::\n:::\n",
+    "markdown": "---\ntitle: \"Blog aire triangle\"\nauthor: \"Hadrien Barc\"\ndate: \"2023-02-24\"\ncategories: [triangle]\nimage: \"triangles.jpeg\"\n---\n\n\n# **Librairie heron :** \n\n## Ce package permet de calculer l'aire d'un triangle en utilisant la formule de Héron.\n\n### Pour installer ce package il faut exécutez la commande :\n\n::: {.cell}\n\n```{.r .cell-code}\nremotes::install_github(\"3rakk/heron\")\n```\n:::\n\n\n# Graphique des triangles côte à côte\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n\n# Aire triangle initial\n\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n\n\n# Somme des aires des trois triangles (Sierpiński)\n\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n```\n[1] 1.5\n```\n:::\n:::\n",
     "supporting": [
       "index_files"
     ],

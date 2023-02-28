@@ -6,6 +6,15 @@ categories: [triangle]
 image: "triangles.jpeg"
 ---
 
+# **Librairie heron :** 
+
+## Ce package permet de calculer l'aire d'un triangle en utilisant la formule de Héron.
+
+### Pour installer ce package il faut exécutez la commande :
+```{r, eval=FALSE}
+remotes::install_github("3rakk/heron")
+```
+
 # Graphique des triangles côte à côte
 
 ```{r, echo=FALSE}
@@ -102,7 +111,7 @@ plot_triangles <- function(triangle) {
                                    y = c((A[2]+B[2])/2, (B[2]+C[2])/2, (C[2]+A[2])/2)),
                  aes(x, y), colour = "white", fill = "white") +
     coord_equal() +
-    ggtitle("Divisé en 4 triangles égaux")
+    ggtitle("Les trois triangles de Sierpiński")
   
   # Afficher les deux graphiques côte à côte
   gridExtra::grid.arrange(p1, p2, ncol = 2)
@@ -138,7 +147,7 @@ aire_initial
 # Somme des aires des trois triangles (Sierpiński)
 
 ```{r, echo=FALSE}
-# Calcul de la somme des aires des trois triangles Sierpiński
+# Calcul de la somme des aires des trois triangles de Sierpiński
 A <- triangles[[1]][1]
 A <- unlist(A)
 B <- triangles[[1]][2]

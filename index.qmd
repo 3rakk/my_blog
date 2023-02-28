@@ -11,14 +11,6 @@ page-layout: full
 title-block-banner: true
 ---
 
-# **Librairie heron :** 
-
-## Ce package permet de calculer l'aire d'un triangle en utilisant la formule de Héron.
-
-### Pour installer ce package il faut exécutez la commande :
-
-### remotes::install_github("3rakk/heron")
-
 
 
 
